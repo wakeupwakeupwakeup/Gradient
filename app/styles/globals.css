@@ -39,6 +39,8 @@ body,
   .block-p {
     @apply py-20 px-5
   }
+
+
 }
 
 @media (prefers-color-scheme: dark) {
