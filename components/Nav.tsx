@@ -23,7 +23,7 @@ export default function Nav() {
                 {
                     Object.entries(list).map(([key, value], index) => {
                         return (
-                            <div className={"flex border-x-2 border-white items-center justify-center w-full"}>
+                            <div key={index} className={"flex border-x-2 border-white items-center justify-center w-full"}>
                                 <Link href={`${value}`} key={index} className={"whitespace-nowrap uppercase text-xs font-extralight no-underline py-7 px-10"}>
                                     {key}
                                 </Link>
