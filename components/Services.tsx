@@ -17,7 +17,7 @@ export default function Services() {
             {
                 services.map((service, index) => {
                     return (
-                        <div>
+                        <div key={index}>
                             <div className={"flex border-y-2 border-white px-12 py-5"}>
                                 {Spheres(index)}
                             </div>

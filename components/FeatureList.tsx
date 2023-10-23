@@ -4,7 +4,7 @@ import features from '../public/page_data/features_list.json'
 export default function FeatureList() {
 
     return (
-        <div>
+        <div className={"grid grid-cols-1 md:grid-cols-2"}>
             {
 
                 features.map((feature, index) => {

@@ -7,7 +7,7 @@ export default function Home() {
   return (
    <div>
        {/* Main block*/}
-       <div className={"bg-image flex-col"}>
+       <div className={"main-background flex-col"}>
            <div className={"block-p"}>
                <div>
                    <Nav />
@@ -16,9 +16,9 @@ export default function Home() {
                    <div className={"mb-16"}>
                        <div className={"flex flex-row justify-end items-center mb-16"}>
                            <span className={"text-3xl font-extralight mr-2 gradient-text"}>2023</span>
-                           <span className={"text-xs font-light gradient-text"}>hi there, let's<br />get started!</span>
+                           <span className={"text-xs font-light gradient-text"}>hi there, let&apos;s<br />get started!</span>
                        </div>
-                       <div className={"flex-col w-44"}>
+                       <div className={"flex-col w-44 md:w-full"}>
                            <h1 className={"heading mb-2"}>Influence your audience</h1>
                            <div>
                                <span className={"text-xs font-normal"}>boost your brand with our marketing expertise</span>
@@ -31,7 +31,7 @@ export default function Home() {
                                <Image src={"/star.svg"} alt={"star"} width={30} height={30}/>
                            </div>
                            <div className={"w-2/3"}>
-                               <p className={"text-xs font-extralight"}>
+                               <p className={"font-extralight gradient-text"}>
                                    We believe in the power of digital media to transform businesses and connect them with their audiences in meaningful ways.
                                </p>
                            </div>
@@ -39,17 +39,19 @@ export default function Home() {
                    </div>
                </div>
            </div>
-           <div className={"grid grid-cols-2 grid-rows-2 gap-y-9 text-xs py-12 px-5"}>
-               <span>digital branding</span>
-               <span>influence marketing</span>
-               <span>content creation</span>
-               <span>design/development</span>
+           <div className={"bg-grid"}>
+               <div className={"grid grid-cols-2 md:grid-cols-4 grid-rows-2 md:grid-rows-1 gap-y-9 text-xs py-12 px-5 gradient-text"}>
+                   <span>digital branding</span>
+                   <span>influence marketing</span>
+                   <span>content creation</span>
+                   <span>design/development</span>
+               </div>
            </div>
        </div>
        {/* Block #2*/}
        <div className={"block-p"}>
            <div className={"text-xs font-extralight my-20"}>
-               <div className={"flex mb-3.5"}>
+               <div className={"flex mb-3.5 md:hidden"}>
                    <Image src={"/star.svg"} alt={"star"} width={30} height={30}/>
                    <Image src={"/star.svg"} alt={"star"} width={30} height={30}/>
                    <Image src={"/star.svg"} alt={"star"} width={30} height={30}/>
@@ -62,7 +64,7 @@ export default function Home() {
                </p>
            </div>
            <div>
-               <span className={"heading-top"}>London 2006</span>
+               <span className={"heading-top gradient-text"}>London 2006</span>
                <h2 className={"heading"}>We turn your digital dreams into reality</h2>
            </div>
            <div className={"text-xs font-extralight my-20"}>
@@ -103,23 +105,25 @@ export default function Home() {
                        Influenzilla is a leading design and marketing agency that offers creative solutions to businesses of all sizes. Our team of experts specializes in creating unique and effective designs that help our clients stand out in a crowded market.
                    </p>
                    <p>
-                       Our mission is to help our clients achieve their business objectives through innovative and effective design solutions. We believe that great design is more than just aesthetics. It's about creating a seamless user experience that engages and delights your audience.
+                       Our mission is to help our clients achieve their business objectives through innovative and effective design solutions. We believe that great design is more than just aesthetics. It&apos;s about creating a seamless user experience that engages and delights your audience.
                    </p>
                </div>
            </div>
        </div>
        {/* Block #5*/}
-       <div className={"block-p"}>
-           <div>
-               <div className={"flex flex-col h-[452px] justify-between"}>
-                   <span className={"text-xs font-light gradient-text"}>hi there, let's<br />get started!</span>
-                   <h2 className={"heading"}>Expertise and experience</h2>
-                   <p>
-                       We believe that building long-lasting relationships with our clients is key to achieving success. We are passionate about what we do, and we are committed to delivering exceptional results for every client we work with.
-                   </p>
+       <div className={""}>
+           <div className={"block-5-background"}>
+               <div className={"block-p"}>
+                   <div className={"flex flex-col h-[452px] justify-between"}>
+                       <span className={"text-xs font-light gradient-text"}>hi there, let&apos;s<br />get started!</span>
+                       <h2 className={"heading"}>Expertise and experience</h2>
+                       <p className={"gradient-text"}>
+                           We believe that building long-lasting relationships with our clients is key to achieving success. We are passionate about what we do, and we are committed to delivering exceptional results for every client we work with.
+                       </p>
+                   </div>
                </div>
            </div>
-           <div>
+           <div className={"block-p"}>
                <div className={"text-xs font-extralight my-20"}>
                    <div className={"flex mb-3.5"}>
                        <Image src={"/star.svg"} alt={"star"} width={30} height={30}/>
